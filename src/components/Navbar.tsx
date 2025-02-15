@@ -17,7 +17,7 @@ const Navbar = () => {
                 className="h-10 w-auto"
               />
               <span className="font-bold text-xl">
-                <span className="md:hidden bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">Kongunadu Arts and Science College</span>
+                <span className="md:hidden text:sm bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">Kongunadu Arts and Science College</span>
                 <span className="hidden md:inline bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">Kongunadu Arts and Science College</span>
               </span>
             </Link>
