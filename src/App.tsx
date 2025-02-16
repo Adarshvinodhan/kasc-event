@@ -4,7 +4,7 @@ import Navbar from './components/Navbar';
 import Background from './components/Background';
 import Home from './pages/Home';
 import Rules from './pages/Rules';
-import Contact from './pages/Contact';
+
 
 function App() {
   return (
@@ -15,7 +15,6 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/rules" element={<Rules />} />
-          <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
     </Router>

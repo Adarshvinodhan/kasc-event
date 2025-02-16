@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Calendar, ScrollText, Phone, Menu, X } from 'lucide-react';
+import { Link as ScrollLink } from "react-scroll";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,14 +12,13 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <Link to="/" className="flex items-center space-x-3">
-              <img 
-                src="https://kongunaducollege.ac.in/sites/kongunaducollege.ac.in/files/KASC_logo_1.png" 
-                alt="KASC Logo" 
+              <img
+                src="https://kongunaducollege.ac.in/sites/kongunaducollege.ac.in/files/KASC_logo_1.png"
+                alt="KASC Logo"
                 className="h-10 w-auto"
               />
-              <span className="font-bold text-xl">
-                <span className="md:hidden text:sm bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">Kongunadu Arts and Science College</span>
-                <span className="hidden md:inline bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">Kongunadu Arts and Science College</span>
+              <span className="font-bold md:text-xl">
+                <span className="md:inline bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">Kongunadu Arts & Science College</span>
               </span>
             </Link>
           </div>
@@ -26,18 +26,31 @@ const Navbar = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
-              <Link to="/" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">
+              <ScrollLink
+                to="events"
+                smooth={true}
+                duration={500}
+                offset={-50} 
+                className="cursor-pointer text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors"
+              >
                 <Calendar className="inline-block w-4 h-4 mr-1" />
                 Events
-              </Link>
+              </ScrollLink>
+
               <Link to="/rules" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">
                 <ScrollText className="inline-block w-4 h-4 mr-1" />
                 Rules
               </Link>
-              <Link to="/contact" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">
+              <ScrollLink
+                to="contact"
+                smooth={true}
+                duration={500}
+                offset={-50} 
+                className="cursor-pointer text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors"
+              >
                 <Phone className="inline-block w-4 h-4 mr-1" />
                 Contact
-              </Link>
+              </ScrollLink>
             </div>
           </div>
 
@@ -68,14 +81,25 @@ const Navbar = () => {
         `}
       >
         <div className="pt-20 pb-3 px-4 space-y-1">
-          <Link
-            to="/"
+          <button
             onClick={() => setIsOpen(false)}
-            className="flex items-center space-x-2 text-white px-3 py-4 rounded-md text-base font-medium hover:bg-white/10 transition-colors"
+            className="absolute top-4 right-4 p-2 text-gray-300 hover:text-white focus:outline-none"
+          >
+            <X className="h-6 w-6" aria-hidden="true" />
+          </button>
+
+          <ScrollLink
+            to="events"
+            smooth={true}
+            duration={500}
+            offset={-50}
+            onClick={() => setIsOpen(false)}
+            className="cursor-pointer flex items-center space-x-2 text-white px-3 py-4 rounded-md text-base font-medium hover:bg-white/10 transition-colors"
           >
             <Calendar className="h-5 w-5" />
             <span>Events</span>
-          </Link>
+          </ScrollLink>
+
           <Link
             to="/rules"
             onClick={() => setIsOpen(false)}
@@ -84,14 +108,18 @@ const Navbar = () => {
             <ScrollText className="h-5 w-5" />
             <span>Rules</span>
           </Link>
-          <Link
-            to="/contact"
+
+          <ScrollLink
+            to="contact"
+            smooth={true}
+            duration={500}
+            offset={-50}
             onClick={() => setIsOpen(false)}
-            className="flex items-center space-x-2 text-white px-3 py-4 rounded-md text-base font-medium hover:bg-white/10 transition-colors"
+            className="cursor-pointer flex items-center space-x-2 text-white px-3 py-4 rounded-md text-base font-medium hover:bg-white/10 transition-colors"
           >
             <Phone className="h-5 w-5" />
             <span>Contact</span>
-          </Link>
+          </ScrollLink>
         </div>
       </div>
     </nav>

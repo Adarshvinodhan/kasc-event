@@ -12,58 +12,77 @@ const Rules = () => {
 
         <div className="space-y-8 bg-black/30 backdrop-blur-sm p-8 rounded-lg">
           <section>
-            <h2 className="text-2xl font-bold mb-4">General Guidelines</h2>
+            <h2 className="text-2xl font-bold mb-4">QUIZZARD [Quiz]</h2>
             <ul className="list-disc pl-6 space-y-2">
-              <li>All participants must be currently enrolled students</li>
-              <li>Valid university ID is required for registration</li>
-              <li>Teams must consist of 2-4 members</li>
-              <li>Registration deadline is March 10, 2024</li>
+              <li>Two members per team</li>
+              <li>Written prelims will be conducted</li>
+              <li>Duration: 60 Minutes</li>
+              <li>Participants are not allowed to use mobile phones/any electronic devices</li>
             </ul>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold mb-4">Event-Specific Rules</h2>
-            <div className="space-y-6">
-              <div>
-                <h3 className="text-xl font-bold mb-2">Hackathon</h3>
-                <ul className="list-disc pl-6 space-y-2">
-                  <li>24-hour continuous event</li>
-                  <li>All code must be original and written during the event</li>
-                  <li>Use of open-source libraries is allowed</li>
-                  <li>Teams must present their projects to judges</li>
-                </ul>
-              </div>
-
-              <div>
-                <h3 className="text-xl font-bold mb-2">Tech Talks</h3>
-                <ul className="list-disc pl-6 space-y-2">
-                  <li>Presentations limited to 20 minutes</li>
-                  <li>Q&A session of 10 minutes</li>
-                  <li>Slides must be submitted 24 hours before the event</li>
-                </ul>
-              </div>
-
-              <div>
-                <h3 className="text-xl font-bold mb-2">Project Showcase</h3>
-                <ul className="list-disc pl-6 space-y-2">
-                  <li>Projects must be completed before the event</li>
-                  <li>Each team gets a 6x4 ft display area</li>
-                  <li>Power outlets will be provided</li>
-                  <li>Setup time is 1 hour before the event</li>
-                </ul>
-              </div>
-            </div>
+            <h2 className="text-2xl font-bold mb-4">TECH-TALK [Poster Presentation]</h2>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>Theme: Applications of AI [Health Care, Business, Education, Science, IT, etc.]</li>
+              <li>Two members per team</li>
+              <li>Staff Incharge: B Manogaran</li>
+              <li>Student Volunteers: R Ranith Prawin (I MSc CS), G Raja Perarasu (I MSc CS)</li>
+            </ul>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold mb-4">Code of Conduct</h2>
+            <h2 className="text-2xl font-bold mb-4">DEBOGAGE [Debugging]</h2>
             <ul className="list-disc pl-6 space-y-2">
-              <li>Respect all participants and staff</li>
-              <li>No plagiarism or cheating</li>
-              <li>Maintain professional behavior throughout the event</li>
-              <li>Follow all university safety guidelines</li>
+              <li>Two programs will be given</li>
+              <li>Languages: C, C++, Java, Python</li>
+              <li>Duration: 90 Minutes</li>
+              <li>Staff Incharge: M Juliet Monolisa Esther</li>
+              <li>Student Volunteers: D Naveen Kumar (III BSc CS), V Deepak (III BSc CS)</li>
             </ul>
           </section>
+
+          <section>
+            <h2 className="text-2xl font-bold mb-4">T-HUNT [Treasure Hunt]</h2>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>Five members per team</li>
+              <li>Participant should have knowledge of the places and structures inside the campus</li>
+              <li>Finals will be on the stage</li>
+              <li>Staff Incharge: R Pavithra</li>
+              <li>Student Volunteers: D Deepan Raj (II BSc CS), V Srimathi (II BSc CS)</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold mb-4">CONNECT-TECH [ConneXions]</h2>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>Two members per team</li>
+              <li>Staff Incharge: N Pavyasre</li>
+              <li>Student Volunteers: S K Kishika (II BSc CS), T Mahaswetha (II BSc CS)</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold mb-4">ACT-OUT [Dumb Charade]</h2>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>Three members per team</li>
+              <li>One person should give the gestures and the other two should guess the word</li>
+              <li>Duration: 60 Minutes</li>
+              <li>Finals will be on the stage</li>
+              <li>Staff Incharge: A Immaculate</li>
+              <li>Student Volunteers: M Diwakar (II MSc CS), R Nandhini (II MSc CS)</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold mb-4">HENNA-TATTOO [Mehndi Design]</h2>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>Two members per team</li>
+              <li>Staff Incharge: Dr. Nithya</li>
+              <li>Student Volunteers: S Naval Sidu (III BSc CS), M Chidambaram (III BSc CS)</li>
+            </ul>
+          </section>
+
         </div>
       </div>
     </div>
