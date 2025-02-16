@@ -79,16 +79,41 @@ const events = [
 
 const Home = () => {
   return (
-    <div className="pt-2 md:pt-0">
+    <div className="pt-0 md:pt-0">
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center text-white mt-2 md:mt-0">
-  <div className="text-center space-y-8 p-8">
-    <h2 className="text-xl sm:text-2xl md:text-3xl font-semiboldanimate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent [text-shadow:_0_0_30px_rgb(45_212_191_/_0.5),_0_0_60px_rgb(168_85_247_/_0.5),_0_0_80px_rgb(249_115_22_/_0.5) uppercase tracking-wide">
-      Department of Computer Science [SF] Organizes
-    </h2>
-    <h1 className="text-6xl sm:text-7xl md:text-8xl font-bold mb-4 animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent [text-shadow:_0_0_30px_rgb(45_212_191_/_0.5),_0_0_60px_rgb(168_85_247_/_0.5),_0_0_80px_rgb(249_115_22_/_0.5)]">
-      INTRA INFO QUEST ’25
-    </h1>
+  <div className="text-center space-y-4 md:space-y-8 p-8">
+    {/* Mobile-specific layout */}
+    <div className="md:hidden text-center">
+  <h2 className="text-lg sm:text-xl md:text-2xl font-semibold whitespace-nowrap bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent [text-shadow:_0_0_30px_rgb(45_212_191_/_0.5),_0_0_60px_rgb(168_85_247_/_0.5),_0_0_80px_rgb(249_115_22_/_0.5)] uppercase tracking-wide">
+    Kongunadu
+  </h2>
+  <h2 className="text-lg sm:text-xl md:text-2xl font-semibold whitespace-nowrap bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent [text-shadow:_0_0_30px_rgb(45_212_191_/_0.5),_0_0_60px_rgb(168_85_247_/_0.5),_0_0_80px_rgb(249_115_22_/_0.5)] uppercase tracking-wide">
+    Arts and Science College
+  </h2>
+  <h2 className="text-base sm:text-lg md:text-xl font-semibold whitespace-nowrap bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent [text-shadow:_0_0_30px_rgb(45_212_191_/_0.5),_0_0_60px_rgb(168_85_247_/_0.5),_0_0_80px_rgb(249_115_22_/_0.5)] uppercase tracking-wide">
+    Department of Computer Science [SF]
+  </h2>
+  <h2 className="text-base sm:text-lg md:text-xl font-semibold whitespace-nowrap bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent [text-shadow:_0_0_30px_rgb(45_212_191_/_0.5),_0_0_60px_rgb(168_85_247_/_0.5),_0_0_80px_rgb(249_115_22_/_0.5)] uppercase tracking-wide">
+    Organizes
+  </h2>
+  <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mt-4 whitespace-nowrap bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent [text-shadow:_0_0_30px_rgb(45_212_191_/_0.5),_0_0_60px_rgb(168_85_247_/_0.5),_0_0_80px_rgb(249_115_22_/_0.5)]">
+    InfoQuest ’25
+  </h1>
+</div>
+
+
+    {/* Desktop layout (unchanged) */}
+    <div className="hidden md:block">
+      <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent [text-shadow:_0_0_30px_rgb(45_212_191_/_0.5),_0_0_60px_rgb(168_85_247_/_0.5),_0_0_80px_rgb(249_115_22_/_0.5)] uppercase tracking-wide">
+        Department of Computer Science [SF] Organizes
+      </h2>
+      <h1 className="text-6xl sm:text-7xl md:text-8xl font-bold mb-4 animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent [text-shadow:_0_0_30px_rgb(45_212_191_/_0.5),_0_0_60px_rgb(168_85_247_/_0.5),_0_0_80px_rgb(249_115_22_/_0.5)]">
+        InfoQuest ’25
+      </h1>
+    </div>
+
+    {/* Common content for both mobile and desktop */}
     <div className="flex flex-wrap justify-center gap-6 text-lg">
       <div className="flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-teal-500/10 to-teal-500/20 backdrop-blur-sm border border-teal-500/20">
         <Calendar className="mr-2 text-teal-400" /> February 25, 2025

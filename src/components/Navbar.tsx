@@ -17,8 +17,8 @@ const Navbar = () => {
                 alt="KASC Logo"
                 className="h-10 w-auto"
               />
-              <span className="font-bold md:text-xl">
-                <span className="md:inline bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">Kongunadu Arts & Science College</span>
+              <span className="font-bold text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl whitespace-nowrap overflow-hidden">
+                <span className="md:inline overflow-hidden bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">Kongunadu Arts & Science College</span>
               </span>
             </Link>
           </div>
@@ -75,12 +75,12 @@ const Navbar = () => {
       <div
         className={`
           md:hidden
-          fixed inset-0 z-50 bg-black/95 backdrop-blur-md
+          fixed inset-0 z-50 bg-black/95 backdrop-blur-md 
           transform transition-transform duration-300 ease-in-out
           ${isOpen ? 'translate-x-0' : 'translate-x-full'}
         `}
       >
-        <div className="pt-20 pb-3 px-4 space-y-1">
+        <div className="pt-20 pb-3 px-4 space-y-1 bg-black/50">
           <button
             onClick={() => setIsOpen(false)}
             className="absolute top-4 right-4 p-2 text-gray-300 hover:text-white focus:outline-none"
@@ -109,7 +109,7 @@ const Navbar = () => {
             <span>Rules</span>
           </Link>
 
-          <ScrollLink
+          <ScrollLink 
             to="contact"
             smooth={true}
             duration={500}
