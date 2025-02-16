@@ -10,7 +10,7 @@ interface TimeLeft {
 
 const CountdownTimer = () => {
   const calculateTimeLeft = (): TimeLeft => {
-    const eventDate = new Date('2025-02-20T09:00:00').getTime();
+    const eventDate = new Date('2025-02-25T09:00:00').getTime();
     const now = new Date().getTime();
     const difference = eventDate - now;
 

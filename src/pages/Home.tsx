@@ -1,6 +1,7 @@
 import React from 'react';
 import { Calendar, MapPin, Clock, ScrollText, Rocket, Code, Microscope as Microphone, Brain, Gamepad, Trophy, ArrowRight } from 'lucide-react';
 import CountdownTimer from '../components/CountdownTimer';
+import { Link } from 'react-router-dom';
 
 const events = [
   {
@@ -72,11 +73,11 @@ const Home = () => {
       <section className="relative min-h-screen flex items-center justify-center text-white mt-2 md:mt-0">
         <div className="text-center space-y-8 p-8">
           <h1 className="text-6xl sm:text-7xl md:text-8xl font-bold mb-4 animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent [text-shadow:_0_0_30px_rgb(45_212_191_/_0.5),_0_0_60px_rgb(168_85_247_/_0.5),_0_0_80px_rgb(249_115_22_/_0.5)]">
-            TechFest 2025
+          INTRA INFO QUEST ’25
           </h1>
           <div className="flex flex-wrap justify-center gap-6 text-lg">
             <div className="flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-teal-500/10 to-teal-500/20 backdrop-blur-sm border border-teal-500/20">
-              <Calendar className="mr-2 text-teal-400" /> February 20-22, 2025
+              <Calendar className="mr-2 text-teal-400" /> February 25, 2025
             </div>
             <div className="flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-purple-500/10 to-purple-500/20 backdrop-blur-sm border border-purple-500/20">
               <MapPin className="mr-2 text-purple-400" /> Main Auditorium
@@ -159,13 +160,13 @@ const Home = () => {
         <div className="max-w-4xl mx-auto text-center text-white">
           <h2 className="text-4xl font-bold mb-6">Rules & Regulations</h2>
           <p className="mb-8">Please review our event guidelines and participation rules before registering.</p>
-          <a 
-            href="/rules"
+          <Link 
+            to="/rules"
             className="inline-flex items-center bg-white/10 backdrop-blur-md text-white px-8 py-3 rounded-full hover:bg-white/20 transition"
           >
             <ScrollText className="mr-2" />
             View Complete Rules
-          </a>
+          </Link>
         </div>
       </section>
 
