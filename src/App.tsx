@@ -2,7 +2,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Background from './components/Background';
 import Home from './pages/Home';
-import Rules from './pages/Rules';
 import EventDetail from './pages/Events';
 import {  Rocket, Code, Microscope as Microphone, Brain, Gamepad, Trophy, Smile } from 'lucide-react';
 
@@ -110,7 +109,6 @@ function App() {
         <Routes>
           <Route path="/" element={<Home events={events}/>} />
           <Route path="/events/:eventId" element={<EventDetail events={events} />} />
-          <Route path="/rules" element={<Rules />} />
         </Routes>
       </div>
     </Router>
