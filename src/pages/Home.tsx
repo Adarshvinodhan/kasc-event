@@ -4,80 +4,19 @@ import CountdownTimer from '../components/CountdownTimer';
 import { Link } from 'react-router-dom';
 import { Element } from "react-scroll";
 
-const events = [
-  {
-    id: 1,
-    name: "QUIZZARD",
-    description: "Compete with your peers and win exciting prizes",
-    formLink: "https://forms.gle/LHacXmg53Wu9fF8F6",
-    icon: <Code className="w-8 h-8 text-indigo-400" />,
-    image: "https://images.unsplash.com/photo-1504384764586-bb4cdc1707b0?auto=format&fit=crop&w=1000&q=80",
-    user: "2",
-    prize: "Certificate + Cash"
-  },
-  {
-    id: 2,
-    name: "Tech Talks",
-    description: "Showcase your knowledge through Presentations",
-    formLink: "https://forms.gle/LHacXmg53Wu9fF8F6",
-    icon: <Microphone className="w-8 h-8 text-purple-400" />,
-    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1000&q=80",
-    user: "2",
-    prize: "Certificate + Cash"
-  },
-  {
-    id: 3,
-    name: "DEBOGAGE",
-    description: "Debug Codes and Win Prizes",
-    formLink: "https://forms.gle/LHacXmg53Wu9fF8F6",
-    icon: <Rocket className="w-8 h-8 text-blue-400" />,
-    image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1000&q=80",
-    user: "2",
-    prize: "Certificate + Cash"
-  },
-  {
-    id: 4,
-    name: "T- HUNT",
-    description: "Fun-filled Treasure Hunt inside our Campus",
-    formLink: "https://forms.gle/LHacXmg53Wu9fF8F6",
-    icon: <Brain className="w-8 h-8 text-green-400" />,
-    image: "https://images.unsplash.com/photo-1612257998531-70e0d0a15f6d?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    user: "5",
-    prize: "Certificate + Cash"
-  },
-  {
-    id: 5,
-    name: "CONNECT- TECH",
-    description: "Connect Right things with you'r Presence of Mind!",
-    formLink: "https://forms.gle/LHacXmg53Wu9fF8F6",
-    icon: <Gamepad className="w-8 h-8 text-red-400" />,
-    image: "https://images.unsplash.com/photo-1517373116369-9bdb8cdc9f62?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    user: "2",
-    prize: "Certificate + Cash"
-  },
-  {
-    id: 6,
-    name: "ACT- OUT",
-    description: "Showcase Your Acting Skills infront of our Panels",
-    formLink: "https://forms.gle/LHacXmg53Wu9fF8F6",
-    icon: <Trophy className="w-8 h-8 text-yellow-400" />,
-    image: "https://plus.unsplash.com/premium_photo-1683219368353-6597c132c26f?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    user: "3",
-    prize: "Certificate + Cash"
-  },
-  {
-    id: 7,
-    name: "HENNA-TATTOO",
-    description: " Create stunning henna designs and showcase your artistic skills",
-    formLink: "https://forms.gle/LHacXmg53Wu9fF8F6",
-    icon: <Smile className="w-8 h-8 text-yellow-400" />,
-    image: "https://images.unsplash.com/photo-1505932794465-147d1f1b2c97?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    user: "2",
-    prize: "Certificate + Cash"
-  }
-];
+interface Event {
+  id: number;
+  name: string;
+  description: string;
+  formLink: string;
+  icon: JSX.Element;
+  image: string;
+  user: string;
+  prize: string;
+}
 
-const Home = () => {
+
+const Home = ({events}: { events: Event[]}) => {
   return (
     <div className="pt-0 md:pt-0">
       {/* Hero Section */}
@@ -98,7 +37,7 @@ const Home = () => {
     Organizes
   </h2>
   <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mt-4 whitespace-nowrap bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent [text-shadow:_0_0_30px_rgb(45_212_191_/_0.5),_0_0_60px_rgb(168_85_247_/_0.5),_0_0_80px_rgb(249_115_22_/_0.5)]">
-    InfoQuest ’25
+    Inta InfoQuest ’25
   </h1>
 </div>
 
@@ -116,13 +55,13 @@ const Home = () => {
     {/* Common content for both mobile and desktop */}
     <div className="flex flex-wrap justify-center gap-6 text-lg">
       <div className="flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-teal-500/10 to-teal-500/20 backdrop-blur-sm border border-teal-500/20">
-        <Calendar className="mr-2 text-teal-400" /> February 25, 2025
+        <Calendar className="mr-2 text-teal-400" />25-02-2025
       </div>
       <div className="flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-purple-500/10 to-purple-500/20 backdrop-blur-sm border border-purple-500/20">
         <MapPin className="mr-2 text-purple-400" /> Main Auditorium
       </div>
       <div className="flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-orange-500/10 to-orange-500/20 backdrop-blur-sm border border-orange-500/20">
-        <Clock className="mr-2 text-orange-400" /> 9:00 AM - 6:00 PM
+        <Clock className="mr-2 text-orange-400" /> 9:30 AM - 4:00 PM
       </div>
     </div>
     <CountdownTimer />
@@ -148,7 +87,7 @@ const Home = () => {
           <h2 className="text-4xl font-bold text-white text-center mb-12">Events</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {events.map((event) => (
-              <div 
+              <Link to={`/events/${event.id}`} 
                 key={event.id} 
                 className="group relative overflow-hidden rounded-xl bg-gradient-to-br from-gray-900/90 to-black/90 backdrop-blur-sm border border-white/10 hover:border-indigo-500/50 transition-all duration-300"
               >
@@ -190,7 +129,7 @@ const Home = () => {
                     </a>
                   </div>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
