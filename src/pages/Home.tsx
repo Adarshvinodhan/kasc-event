@@ -24,7 +24,7 @@ const Home = ({events}: { events: Event[]}) => {
   <div className="text-center space-y-4 md:space-y-8 p-8">
     {/* Mobile-specific layout */}
     <div className="md:hidden text-center">
-  <h2 className="text-lg sm:text-xl md:text-2xl font-semibold whitespace-nowrap bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent [text-shadow:_0_0_30px_rgb(45_212_191_/_0.5),_0_0_60px_rgb(168_85_247_/_0.5),_0_0_80px_rgb(249_115_22_/_0.5)] uppercase tracking-wide">
+  <h2 className="text-2xl sm:text-xl md:text-2xl font-semibold whitespace-nowrap bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent [text-shadow:_0_0_30px_rgb(45_212_191_/_0.5),_0_0_60px_rgb(168_85_247_/_0.5),_0_0_80px_rgb(249_115_22_/_0.5)] uppercase tracking-wide">
     Kongunadu
   </h2>
   <h2 className="text-lg sm:text-xl md:text-2xl font-semibold whitespace-nowrap bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent [text-shadow:_0_0_30px_rgb(45_212_191_/_0.5),_0_0_60px_rgb(168_85_247_/_0.5),_0_0_80px_rgb(249_115_22_/_0.5)] uppercase tracking-wide">
@@ -37,7 +37,7 @@ const Home = ({events}: { events: Event[]}) => {
     Organizes
   </h2>
   <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mt-4 whitespace-nowrap bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent [text-shadow:_0_0_30px_rgb(45_212_191_/_0.5),_0_0_60px_rgb(168_85_247_/_0.5),_0_0_80px_rgb(249_115_22_/_0.5)]">
-    Inta InfoQuest ’25
+    Intra Info Quest ’25
   </h1>
 </div>
 
@@ -167,7 +167,7 @@ const Home = ({events}: { events: Event[]}) => {
               <h3 className="text-xl font-bold mb-4">Venue</h3>
               <p>Main Auditorium</p>
               <p>Kongunadu Arts & Science College</p>
-              <p>3W5X+VFH, Udayampalayam Rd, Coimbatore, Tamil Nadu 641029</p>
+              <p>G.N Mills,Udayampalayam Rd, Coimbatore-29</p>
             </div>
           </div>
         </div>
