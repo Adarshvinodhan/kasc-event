@@ -1,11 +1,10 @@
-import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Background from './components/Background';
 import Home from './pages/Home';
 import Rules from './pages/Rules';
 import EventDetail from './pages/Events';
-import { Calendar, MapPin, Clock, ScrollText, Rocket, Code, Microscope as Microphone, Brain, Gamepad, Trophy, ArrowRight,User,Smile } from 'lucide-react';
+import {  Rocket, Code, Microscope as Microphone, Brain, Gamepad, Trophy, Smile } from 'lucide-react';
 
 const events = [
   {

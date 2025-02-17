@@ -1,5 +1,4 @@
-import React from 'react';
-import { Calendar, MapPin, Clock, ScrollText, Rocket, Code, Microscope as Microphone, Brain, Gamepad, Trophy, ArrowRight,User,Smile } from 'lucide-react';
+import { Calendar, MapPin, Clock, ScrollText,Trophy, ArrowRight,User} from 'lucide-react';
 import CountdownTimer from '../components/CountdownTimer';
 import { Link } from 'react-router-dom';
 import { Element } from "react-scroll";

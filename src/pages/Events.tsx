@@ -2,7 +2,20 @@ import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { User, Trophy, ArrowLeft } from "lucide-react";
 
-const EventDetail = ({ events }) => {
+interface Event {
+  id: number;
+  name: string;
+  description: string;
+  formLink: string;
+  icon: JSX.Element;
+  image: string;
+  user: string;
+  rule: string;
+  staff: string;
+  student: string;
+  prize: string;
+}
+const EventDetail = ({ events }: { events: Event[] }) => {
   const { eventId } = useParams();
   const event = events.find((e) => e.id.toString() === eventId);
 
@@ -34,7 +47,6 @@ const EventDetail = ({ events }) => {
         </div>
         <p className="text-gray-300 mb-6">{event.description}</p>
         {event.rule && <p className="text-gray-400 mb-2">Rule: {event.rule}</p>}
-        {event.theme && <p className="text-gray-400 mb-2">Theme: {event.theme}</p>}
         <p className="text-gray-400 mb-2">Staff Incharge: {event.staff}</p>
         <p className="text-gray-400 mb-2">Student Volunteers:</p>
         <ul className="text-gray-400 mb-6">
