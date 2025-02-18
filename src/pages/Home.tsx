@@ -165,7 +165,7 @@ const Home = ({ events }: { events: Event[] }) => {
                 <h3 className="text-xl font-bold mb-4">Event Organizer</h3>
                 <p>Dr.R.Saravanamoorthy</p>
                 <p>Students Affairs & HOD</p>
-                <p>Department of Computer Science [SF]</p>
+                <p>Department of Computer Science-SF</p>
               </div>
               <div>
                 <h3 className="text-xl font-bold mb-4">Event Coordinators</h3>
