@@ -53,12 +53,12 @@ const Home = ({ events }: { events: Event[] }) => {
           </div>
 
           {/* Common content for both mobile and desktop */}
-          <div className="flex flex-wrap justify-center gap-6 text-lg">
+          <div className="flex flex-wrap justify-center gap-6 md:text-lg text-base">
             <div className="flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-teal-500/10 to-teal-500/20 backdrop-blur-sm border border-teal-500/20">
               <Calendar className="mr-2 text-teal-400" />25-02-2025
             </div>
             <div className="flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-purple-500/10 to-purple-500/20 backdrop-blur-sm border border-purple-500/20">
-              <MapPin className="mr-2 text-purple-400" /> Dept of Computer Science [SF]
+              <MapPin className="mr-2 text-purple-400" /> Department of Computer Science [SF]
             </div>
             <div className="flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-orange-500/10 to-orange-500/20 backdrop-blur-sm border border-orange-500/20">
               <Clock className="mr-2 text-orange-400" /> 10:00 AM - 4:00 PM
