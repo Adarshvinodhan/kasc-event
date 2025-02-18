@@ -58,7 +58,7 @@ const Home = ({ events }: { events: Event[] }) => {
               <Calendar className="mr-2 text-teal-400" />25-02-2025
             </div>
             <div className="flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-purple-500/10 to-purple-500/20 backdrop-blur-sm border border-purple-500/20">
-              <MapPin className="mr-2 text-purple-400" /> Lab-4
+              <MapPin className="mr-2 text-purple-400" /> Dept of Computer Science [SF]
             </div>
             <div className="flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-orange-500/10 to-orange-500/20 backdrop-blur-sm border border-orange-500/20">
               <Clock className="mr-2 text-orange-400" /> 10:00 AM - 4:00 PM
@@ -147,6 +147,7 @@ const Home = ({ events }: { events: Event[] }) => {
               className="w-48 h-48 rounded-lg shadow-lg border border-gray-500 object-cover"
             />
             <div className="text-lg">
+              <p className="font-semibold">Name: A.Immaculate</p>
               <p className="font-semibold">Phone Number: <span className="text-teal-400">+91 8870112361</span></p>
               <p className="font-semibold">Bank Name: <span className="text-purple-400">Axis Bank</span></p>
               <p className="font-semibold">UPI ID: <span className="text-orange-400">8870112361@ptaxis</span></p>
@@ -163,17 +164,25 @@ const Home = ({ events }: { events: Event[] }) => {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
               <div>
                 <h3 className="text-xl font-bold mb-4">Event Organizer</h3>
-                <p>Dr.R.Saravanamoorthy</p>
-                <p>Students Affairs & HOD</p>
-                <p>Department of Computer Science-SF</p>
+                <p className='font-bold'>Dr.R.Saravanamoorthy</p>
+                <p>Students Affairs-KASC</p>
+                <p>Head of the Department</p>
+                <p>Department of Computer Science [SF]</p>
               </div>
               <div>
                 <h3 className="text-xl font-bold mb-4">Event Coordinators</h3>
-                <p>Department of Computer Science Staff's</p>
+                <p className='font-bold'>Staff-Department of C.S [SF]</p>
+                <p>Mr.B.Manogaran</p >
+                <p>Mrs.A.Immaculate</p>
+                <p>Mrs.N.Paviyasre</p>
+                <p>Dr.A.Nithya</p>
+                <p>Mrs.N.Deepa</p>
+                <p>Mrs.R.Pavithra</p>
+                <p>Mrs.Juliet Monolisa Esther</p>
               </div>
               <div>
-                <h3 className="text-xl font-bold mb-4">Venue</h3>
-                <p>Lab-4</p>
+                <h3 className="text-xl font-bold mb-4">Location</h3>
+                <p>Department of Computer Science [SF]</p>
                 <p>Kongunadu Arts & Science College</p>
                 <p>G.N Mills,Coimbatore-29</p>
               </div>
