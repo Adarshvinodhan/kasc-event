@@ -1,4 +1,5 @@
 import { Calendar, MapPin, ArrowRight,Clock } from 'lucide-react';
+import { useState } from 'react';
 import CountdownTimer from '../components/CountdownTimer';
 import { Link } from 'react-router-dom';
 import { Element } from "react-scroll";
@@ -18,6 +19,16 @@ interface Event {
 
 
 const Home = ({ events }: { events: Event[] }) => {
+  const images = ["/poster1.jpg", "/poster2.jpg"];
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const prevImage = () => {
+    setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
+  };
+
+  const nextImage = () => {
+    setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
+  };
   return (
     <div className="pt-0 md:pt-0">
       {/* Hero Section */}
@@ -70,15 +81,30 @@ const Home = ({ events }: { events: Event[] }) => {
 
 
       {/* Event Poster Section */}
-      <section className="py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <img
-            src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=2000&q=80"
-            alt="TechFest 2024 Poster"
-            className="rounded-lg shadow-2xl w-full"
-          />
-        </div>
-      </section>
+      <section className="px-4">
+      <div className="max-w-4xl mx-auto relative">
+        {/* Image Display */}
+        <img
+          src={images[currentIndex]}
+          alt="Infoquest2k25"
+          className="rounded-lg shadow-2xl w-full"
+        />
+
+        {/* Navigation Buttons */}
+        <button
+          onClick={prevImage}
+          className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 text-white p-3 rounded-full"
+        >
+          ◀
+        </button>
+        <button
+          onClick={nextImage}
+          className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 text-white p-3 rounded-full"
+        >
+          ▶
+        </button>
+      </div>
+    </section>
 
       {/* Events Section */}
       <Element name="events">
