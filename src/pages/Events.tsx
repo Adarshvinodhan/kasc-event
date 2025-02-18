@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
-import { User, Trophy, ArrowLeft } from "lucide-react";
+import { User, Trophy, ArrowLeft} from "lucide-react";
 import { useEffect } from "react";
 
 interface Event {
@@ -15,6 +15,7 @@ interface Event {
   staff: string;
   student: string;
   prize: string;
+  venue:string;
 }
 const EventDetail = ({ events }: { events: Event[] }) => {
   const { eventId } = useParams();

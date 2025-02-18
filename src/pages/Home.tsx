@@ -1,4 +1,4 @@
-import { Calendar, MapPin, Clock, Trophy, ArrowRight, User } from 'lucide-react';
+import { Calendar, MapPin, Clock, Trophy, ArrowRight } from 'lucide-react';
 import CountdownTimer from '../components/CountdownTimer';
 import { Link } from 'react-router-dom';
 import { Element } from "react-scroll";
@@ -12,6 +12,7 @@ interface Event {
   image: string;
   user: string;
   prize: string;
+  venue: string;
 }
 
 
@@ -35,23 +36,18 @@ const Home = ({ events }: { events: Event[] }) => {
             <h2 className="text-base sm:text-lg md:text-xl font-semibold whitespace-nowrap bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent [text-shadow:_0_0_30px_rgb(45_212_191_/_0.5),_0_0_60px_rgb(168_85_247_/_0.5),_0_0_80px_rgb(249_115_22_/_0.5)] uppercase tracking-wide">
               Organizes
             </h2>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mt-4 whitespace-nowrap bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent [text-shadow:_0_0_30px_rgb(45_212_191_/_0.5),_0_0_60px_rgb(168_85_247_/_0.5),_0_0_80px_rgb(249_115_22_/_0.5)]">
-              Intra Info Quest ’25
+            <h1 className="text-xl sm:text-4xl md:text-5xl font-bold mt-4 whitespace-nowrap bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent [text-shadow:_0_0_30px_rgb(45_212_191_/_0.5),_0_0_60px_rgb(168_85_247_/_0.5),_0_0_80px_rgb(249_115_22_/_0.5)]">
+              Technical Symposium - Info Quest ’25
             </h1>
           </div>
           {/* Desktop layout */}
           <div className="hidden md:block">
-            <h2 className="text-2xl md:text-3xl font-semibold whitespace-nowrap bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent [text-shadow:_0_0_30px_rgb(45_212_191_/_0.5),_0_0_60px_rgb(168_85_247_/_0.5),_0_0_80px_rgb(249_115_22_/_0.5)] uppercase tracking-wide">
-              Kongunadu
+            <h2 className="text-2xl md:text-3xl mb-5 font-semibold animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent [text-shadow:_0_0_30px_rgb(45_212_191_/_0.5),_0_0_60px_rgb(168_85_247_/_0.5),_0_0_80px_rgb(249_115_22_/_0.5)] uppercase tracking-wide">
+              Department of Computer Science [SF]
             </h2>
-            <h2 className="text-xl md:text-2xl font-semibold whitespace-nowrap bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent [text-shadow:_0_0_30px_rgb(45_212_191_/_0.5),_0_0_60px_rgb(168_85_247_/_0.5),_0_0_80px_rgb(249_115_22_/_0.5)] uppercase tracking-wide">
-              Arts and Science College
-            </h2>
-            <h2 className="text-2xl md:text-3xl font-semibold animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent [text-shadow:_0_0_30px_rgb(45_212_191_/_0.5),_0_0_60px_rgb(168_85_247_/_0.5),_0_0_80px_rgb(249_115_22_/_0.5)] uppercase tracking-wide">
-              Department of Computer Science [SF] Organizes
-            </h2>
-            <h1 className="text-6xl md:text-8xl font-bold mb-4 animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent [text-shadow:_0_0_30px_rgb(45_212_191_/_0.5),_0_0_60px_rgb(168_85_247_/_0.5),_0_0_80px_rgb(249_115_22_/_0.5)]">
-              InfoQuest ’25
+            <span className='text-2xl md:text-3xl mb-5 font-semibold animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent [text-shadow:_0_0_30px_rgb(45_212_191_/_0.5),_0_0_60px_rgb(168_85_247_/_0.5),_0_0_80px_rgb(249_115_22_/_0.5)] uppercase tracking-wide'> Organizes</span>
+            <h1 className="text-6xl md:text-5xl font-bold mb-4 animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent [text-shadow:_0_0_30px_rgb(45_212_191_/_0.5),_0_0_60px_rgb(168_85_247_/_0.5),_0_0_80px_rgb(249_115_22_/_0.5)]">
+              Technical Symposium - Info Quest ’25
             </h1>
           </div>
 
@@ -61,10 +57,10 @@ const Home = ({ events }: { events: Event[] }) => {
               <Calendar className="mr-2 text-teal-400" />25-02-2025
             </div>
             <div className="flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-purple-500/10 to-purple-500/20 backdrop-blur-sm border border-purple-500/20">
-              <MapPin className="mr-2 text-purple-400" /> Main Auditorium
+              <MapPin className="mr-2 text-purple-400" /> Lab-4
             </div>
             <div className="flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-orange-500/10 to-orange-500/20 backdrop-blur-sm border border-orange-500/20">
-              <Clock className="mr-2 text-orange-400" /> 9:30 AM - 4:00 PM
+              <Clock className="mr-2 text-orange-400" /> 10:00 AM - 4:00 PM
             </div>
           </div>
           <CountdownTimer />
@@ -107,8 +103,8 @@ const Home = ({ events }: { events: Event[] }) => {
                         {event.icon}
                       </div>
                       <div className="flex items-center space-x-2 text-sm">
-                        <User className="w-4 h-4 text-indigo-400" />
-                        <span className="text-gray-300">{event.user}</span>
+                        <MapPin className="w-4 h-4 text-indigo-400" />
+                        <span className="text-white text-xl font-bold">{event.venue}</span>
                       </div>
                     </div>
                     <h3 className="text-xl font-bold text-white mb-2">{event.name}</h3>
@@ -139,6 +135,25 @@ const Home = ({ events }: { events: Event[] }) => {
         </section>
       </Element>
 
+      {/* Payment Section */}
+      <section className="py-16 px-4 bg-black/30 backdrop-blur-sm">
+        <div className="max-w-4xl mx-auto text-center text-white">
+          <h2 className="text-4xl font-bold mb-6">Payment Details</h2>
+          <div className="flex flex-col items-center space-y-6">
+            <img
+              src="/upi.jpeg"
+              alt="UPI QR Code"
+              className="w-48 h-48 rounded-lg shadow-lg border border-gray-500 object-cover"
+            />
+            <div className="text-lg">
+              <p className="font-semibold">Phone Number: <span className="text-teal-400">+91 8870112361</span></p>
+              <p className="font-semibold">Bank Name: <span className="text-purple-400">Axis Bank</span></p>
+              <p className="font-semibold">UPI ID: <span className="text-orange-400">8870112361@ptaxis</span></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Contact Preview */}
       <Element name="contact">
         <section className="py-16 px-4 bg-black/30 backdrop-blur-sm">
@@ -146,14 +161,20 @@ const Home = ({ events }: { events: Event[] }) => {
             <h2 className="text-4xl font-bold mb-6">Contact Us</h2>
             <div className="grid md:grid-cols-2 gap-8">
               <div>
+                <h3 className="text-xl font-bold mb-4">Event Organizer</h3>
+                <p>Dr.R.Saravanamoorthy</p>
+                <p>Students Affairs & HOD</p>
+                <p>Department of Computer Science [SF]</p>
+              </div>
+              <div>
                 <h3 className="text-xl font-bold mb-4">Event Coordinators</h3>
                 <p>Department of Computer Science Staff's</p>
               </div>
               <div>
                 <h3 className="text-xl font-bold mb-4">Venue</h3>
-                <p>Main Auditorium</p>
+                <p>Lab-4</p>
                 <p>Kongunadu Arts & Science College</p>
-                <p>G.N Mills,Udayampalayam Rd, Coimbatore-29</p>
+                <p>G.N Mills,Coimbatore-29</p>
               </div>
             </div>
           </div>

@@ -15,10 +15,10 @@ const Navbar = () => {
               <img
                 src="https://kongunaducollege.ac.in/sites/kongunaducollege.ac.in/files/KASC_logo_1.png"
                 alt="KASC Logo"
-                className="h-10 w-auto"
+                className="h-16 w-auto "
               />
               <span className="font-bold text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl whitespace-nowrap overflow-hidden">
-                <span className="md:inline overflow-hidden bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">Kongunadu Arts & Science College</span>
+                <span className="md:text-5xl md:inline overflow-hidden bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">Kongunadu Arts & Science College</span>
               </span>
             </Link>
           </div>

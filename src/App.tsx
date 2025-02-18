@@ -17,11 +17,13 @@ const events = [
     rule: "Written Prelims will be conducted",
     staff: "A Immaculate",
     student: "M Dhivakar, R Nandhini - II M.Sc. CS",
-    prize: "Certificate + Cash"
+    prize: "Certificate + Cash",
+    venue:"B-12",
+    finals:"Lab-4",
   },
   {
     id: 2,
-    name: "Tech Talks",
+    name: "TECH-TALK",
     description: "Showcase your knowledge through Presentations",
     formLink: "https://forms.gle/LHacXmg53Wu9fF8F6",
     icon: <Microphone className="w-8 h-8 text-purple-400" />,
@@ -31,7 +33,9 @@ const events = [
     Theme: "Applications of AI, Health Care, Business, Education, Science, IT etc..",
     staff: "B Manogaran",
     student: "Ranith Prawin, R Raja Perarasu - I M.Sc. CS",
-    prize: "Certificate + Cash"
+    prize: "Certificate + Cash",
+    venue:"Lab-7",
+    finals:"Lab-4",
   },
   {
     id: 3,
@@ -44,7 +48,8 @@ const events = [
     rule: "Complete Under 60 minutes!",
     staff: "DR. Nithya",
     student: "S Naval Siddhu, M Chidambaram - III B.Sc. CS",
-    prize: "Certificate + Cash"
+    prize: "Certificate + Cash",
+    venue:"Lab-4",
   },
   {
     id: 4,
@@ -57,7 +62,8 @@ const events = [
     rule: "Participants are not allowed to use mobile phones/any electronic devices. Participants should have knowledge of the places and structures inside the Campus.",
     staff: "N Deepa",
     student: "G Nivetha, G Prasanna - III B.Sc. CS",
-    prize: "Certificate + Cash"
+    prize: "Certificate + Cash",
+    venue:"B-13",
   },
   {
     id: 5,
@@ -70,7 +76,8 @@ const events = [
     rule: "Written Prelims Will be Conducted, Finals will be on Stage",
     staff: "M Juliet Monalisa Esther",
     student: "D Naveen Kumar, V Deepak - III B.Sc. CS",
-    prize: "Certificate + Cash"
+    prize: "Certificate + Cash",
+    venue:"B-13",
   },
   {
     id: 6,
@@ -83,7 +90,9 @@ const events = [
     rule: "One person should give the gestures and the other two should guess the word",
     staff: "R Pavithra",
     student: "D Deepan Raj, V Srimathi - II B.Sc. CS",
-    prize: "Certificate + Cash"
+    prize: "Certificate + Cash",
+    venue:"B-16",
+    finals:"Lab-4",
   },
   {
     id: 7,
@@ -96,7 +105,9 @@ const events = [
     rule: "Compete under 60 Minutes!",
     staff: "N Paviya Sree",
     student: "SK Kishika, T Mahaswetha - II B.Sc. CS",
-    prize: "Certificate + Cash"
+    prize: "Certificate + Cash",
+    venue:"B-13",
+    finals:"Lab-4",
   }
 ];
 
