@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
-import { User, Trophy, ArrowLeft} from "lucide-react";
+import { User, Clock, ArrowLeft} from "lucide-react";
 import { useEffect } from "react";
 
 interface Event {
@@ -16,6 +16,7 @@ interface Event {
   student: string;
   prize: string;
   venue:string;
+  time:string;
 }
 const EventDetail = ({ events }: { events: Event[] }) => {
   const { eventId } = useParams();
@@ -48,8 +49,8 @@ const EventDetail = ({ events }: { events: Event[] }) => {
             <span>{event.user}</span>
           </div>
           <div className="flex items-center">
-            <Trophy className="w-5 h-5 text-yellow-400 mr-2" />
-            <span className="text-yellow-400 font-semibold">{event.prize}</span>
+            <Clock className="w-5 h-5 text-yellow-400 mr-2" />
+            <span className="text-yellow-400 font-semibold">{event.time}</span>
           </div>
         </div>
         <p className="text-gray-300 mb-6">{event.description}</p>

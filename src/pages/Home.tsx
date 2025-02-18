@@ -1,4 +1,4 @@
-import { Calendar, MapPin, Clock, Trophy, ArrowRight } from 'lucide-react';
+import { Calendar, MapPin, ArrowRight,Clock } from 'lucide-react';
 import CountdownTimer from '../components/CountdownTimer';
 import { Link } from 'react-router-dom';
 import { Element } from "react-scroll";
@@ -13,6 +13,7 @@ interface Event {
   user: string;
   prize: string;
   venue: string;
+  time: string;
 }
 
 
@@ -111,8 +112,8 @@ const Home = ({ events }: { events: Event[] }) => {
                     <p className="text-gray-300 mb-4 flex-grow">{event.description}</p>
                     <div className="flex items-center justify-between">
                       <div className="flex items-center space-x-2">
-                        <Trophy className="w-4 h-4 text-yellow-400" />
-                        <span className="text-yellow-400 font-semibold">{event.prize}</span>
+                        <Clock className="w-4 h-4 text-yellow-400" />
+                        <span className="text-yellow-400 font-semibold">{event.time}</span>
                       </div>
                       <a
                         href={event.formLink}

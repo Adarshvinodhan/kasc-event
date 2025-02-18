@@ -14,12 +14,13 @@ const events = [
     icon: <Code className="w-8 h-8 text-indigo-400" />,
     image: "https://images.unsplash.com/photo-1504384764586-bb4cdc1707b0?auto=format&fit=crop&w=1000&q=80",
     user: "2",
-    rule: "Written Prelims will be conducted",
+    rule: "Written Prelims will be conducted,Finals will be held on 2:00-3:00 PM",
     staff: "A Immaculate",
     student: "M Dhivakar, R Nandhini - II M.Sc. CS",
     prize: "Certificate + Cash",
     venue:"B-12",
     finals:"Lab-4",
+    time:"10:30-11:30",
   },
   {
     id: 2,
@@ -36,6 +37,7 @@ const events = [
     prize: "Certificate + Cash",
     venue:"Lab-7",
     finals:"Lab-4",
+    time:"10:30 - 12:00",
   },
   {
     id: 3,
@@ -50,6 +52,7 @@ const events = [
     student: "S Naval Siddhu, M Chidambaram - III B.Sc. CS",
     prize: "Certificate + Cash",
     venue:"Lab-4",
+    time:"10:30 - 12:30",
   },
   {
     id: 4,
@@ -64,6 +67,7 @@ const events = [
     student: "G Nivetha, G Prasanna - III B.Sc. CS",
     prize: "Certificate + Cash",
     venue:"B-13",
+    time:"10:30 - 1:00",
   },
   {
     id: 5,
@@ -78,6 +82,8 @@ const events = [
     student: "D Naveen Kumar, V Deepak - III B.Sc. CS",
     prize: "Certificate + Cash",
     venue:"B-13",
+    time:"10:30 - 1:00",
+    end:"2:00 - 3:00"
   },
   {
     id: 6,
@@ -93,6 +99,7 @@ const events = [
     prize: "Certificate + Cash",
     venue:"B-16",
     finals:"Lab-4",
+    time:"10:30 - 1:00",
   },
   {
     id: 7,
@@ -108,6 +115,7 @@ const events = [
     prize: "Certificate + Cash",
     venue:"B-13",
     finals:"Lab-4",
+    time:"10:30 - 1:00",
   }
 ];
 
