@@ -160,7 +160,7 @@ const Home = ({ events }: { events: Event[] }) => {
         <section className="py-16 px-4 bg-black/30 backdrop-blur-sm">
           <div className="max-w-4xl mx-auto text-center text-white">
             <h2 className="text-4xl font-bold mb-6">Contact Us</h2>
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
               <div>
                 <h3 className="text-xl font-bold mb-4">Event Organizer</h3>
                 <p>Dr.R.Saravanamoorthy</p>
