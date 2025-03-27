@@ -1,3 +1,5 @@
+Live:https://infoquest-kasc2k25.netlify.app/
+
 # 🚀 Technical Event Landing Page
 
 Welcome to the official landing page for our college's technical event! This project is built using modern web technologies to provide an immersive and interactive experience for visitors.
